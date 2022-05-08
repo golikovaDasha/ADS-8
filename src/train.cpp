@@ -13,7 +13,7 @@ Train::Cage* Train::add(bool light) {
   return NewC;
 }
 void Train::addCage(bool light) {
-  if (first && last) {    
+  if (first && last) {
     last->next = add(light);
     last->next->prev = last;
     last = last->next;
@@ -23,7 +23,7 @@ void Train::addCage(bool light) {
   if (!last->next) {
     last->next = first;
   }
-  } else {        
+  } else {
     first = add(light);
     last = first;
   }
