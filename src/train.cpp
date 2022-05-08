@@ -15,7 +15,7 @@ void Train::addCage(bool light) {
   first = add(light);
   last = first;
   } else {
-  last->next = create(light);
+  last->next = add(light);
   last->next->prev = last;
   last = last->next;
   if (!last->next) {
