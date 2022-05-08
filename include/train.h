@@ -12,7 +12,7 @@ class Train {
   int countOp, len, a; // счетчик шагов (число переходов из вагона в вагон)
   Cage* first;
   Cage* last;
-  Train::Cage* add(bool light);
+
  public:
   Train();
   void addCage(bool light); // добавить вагон с начальным состоянием лампочки
