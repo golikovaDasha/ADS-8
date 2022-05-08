@@ -33,8 +33,8 @@ int Train::getLength() {
   Cage* temporary = first;
   int tCount = 0, len = 0;
   while (true) {
-  countOp+=1;
-  tCount+=1;
+  ++countOp;
+  ++tCount;
   temporary = temporary->next;
   if (temporary->light) {
   int temp = tCount;
